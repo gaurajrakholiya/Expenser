@@ -46,14 +46,6 @@ This project is a web application inspired by Khatabook, designed to manage cust
     npm install
     ```
 
-4. **Setup environment variables**:
-    - Create a `.env` file in the `backend` directory and add your MongoDB URI and any other required environment variables.
-    - Example:
-        ```env
-        MONGO_URI=mongodb://localhost:27017/khatabook
-        PORT=5000
-        ```
-
 ### Running the Application
 
 1. **Start the backend server**:
