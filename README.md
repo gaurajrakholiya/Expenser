@@ -1,64 +1,72 @@
-# Khatabook-like Transaction Management System
+# Money Expense Tracker <a href="https://money-manager-ochre.vercel.app" target="_blank" >money-manager-ochre.vercel.app</a>
 
-## Description
+## Overview
+Money Expense Tracker is a versatile tool designed to help individuals and small businesses manage their finances. It allows users to track expenses, monitor budgets, and view detailed financial reports. For small businesses, it offers additional features to manage profit, supply, and customer details, making it a comprehensive solution for financial tracking and management.
 
-This project is a web application inspired by Khatabook, designed to manage customer transactions. Users can view, add, update, and delete transactions for each customer. The application also provides features to download transaction data in CSV format.
+## Demo account
+- **Personal User**
+  ```
+  username - demo@gmail.com
+  password - demo@012
+  ```
+- **business Acount User**
+  ```
+  username - demo2@gmail.com
+  password - demo@012
+  ```
+  
 
 ## Features
-
-- **Customer Management**: Add, view, update, and delete customer details.
-- **Transaction Management**: Add, view, update, and delete transactions for each customer.
-- **Transaction Download**: Download transaction data in CSV format.
-- **Total Calculations**: Display total amounts for "You Gave" and "You Got" transactions, color-coded for easy identification.
-- **Responsive Design**: Works seamlessly across different devices.
+- **Expense Management:**
+  - Add, edit, and delete expenses
+  - Categorize expenses (e.g., Food, Transport, Entertainment)
+- **Budget Monitoring:**
+  - Set and monitor budgets for different categories
+- **Financial Reporting:**
+  - View summary reports and charts of expenses and budgets
+- **Small Business Management:**
+  - Track profit and loss
+  - Manage supply details
+  - Store and view customer details
+- **User Management:**
+  - User authentication and profile management
 
 ## Technologies Used
+- **Frontend:** HTML, CSS, JavaScript - React js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (jsonwebtoken)
+- **Charting:** Chart.js
 
-- **Frontend**: React, React-Bootstrap, Axios
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Styling**: CSS, Bootstrap
-
-## Getting Started
+## Installation
 
 ### Prerequisites
-
-- Node.js and npm installed
+- Node.js and npm installed on your local machine
 - MongoDB installed and running
 
-### Installation
-
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/khatabook-like-project.git
-    cd khatabook-like-project
-    ```
-
-2. **Install backend dependencies**:
-    ```bash
-    cd backend
-    npm install
-    ```
-
-3. **Install frontend dependencies**:
-    ```bash
-    cd ../frontend
-    npm install
-    ```
-
-### Running the Application
-
-1. **Start the backend server**:
-    ```bash
-    cd backend
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Atveek/Money-Mind.git
+   cd Money-Mind
+2.Set up environment variables:
+  Create a .env file in the root directory and add the following:
+   ```bash
+        PORT = 8080
+        MONGO_URL = mongodb localhost url
+        secret = jwt secret key
+  ```
+3. Install dependencies:
+      ```bash
+      npm install
+4.Start the server:
+   ```bash
     npm start
-    ```
-
-2. **Start the frontend development server**:
-    ```bash
-    cd ../frontend
+  ```
+5. Install dependencies of client:
+      ```bash
+      cd client
+      npm install
+6. run client side interfece:
+   ```bash
     npm start
-    ```
-
-3. **Access the application**:
-    Open your browser and navigate to `http://localhost:3000`
