@@ -31,9 +31,9 @@ app.use("/api/v1/supplier", require("./routes/supplierRoutes"));
 //static files
 app.use(express.static(path.join(__dirname, "./client/build")));
 
-// app.get("*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 //port
 const PORT = 8080 || process.env.PORT;
